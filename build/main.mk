@@ -15,6 +15,14 @@
 # Custom ROM version
 -include vendor/proton/version.mk
 
+# Kernel
+include vendor/proton/configs/BoardConfigKernel.mk
+
+# QCOM
+ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
+include vendor/proton/configs/BoardConfigQcom.mk
+endif
+
 # Override product info for Google Play Services and SafetyNet
 ifeq ($(PRODUCT_OVERRIDE_INFO),true)
 ADDITIONAL_BUILD_PROPERTIES += \
