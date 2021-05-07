@@ -20,6 +20,7 @@ $(call inherit-product, vendor/proton/fonts/fonts.mk)
 $(call inherit-product, vendor/proton/overlay/overlay.mk)
 $(call inherit-product, vendor/proton/telephony/telephony.mk)
 $(call inherit-product, vendor/proton/audio/audio.mk)
+$(call inherit-product, vendor/proton/build/core/qcom_target.mk)
 
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
