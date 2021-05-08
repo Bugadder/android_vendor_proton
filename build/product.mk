@@ -81,6 +81,13 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh \
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0 \
+    android.hidl.base@1.0.vendor \
+    android.hidl.manager@1.0.vendor
+
 # Gapps
 ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gapps/common/common-vendor.mk)
