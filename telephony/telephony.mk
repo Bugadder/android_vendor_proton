@@ -42,8 +42,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml
 
 # TCP Connection Management
-PRODUCT_PACKAGES += tcmiface
-PRODUCT_BOOT_JARS += tcmiface
+#PRODUCT_PACKAGES += tcmifac
+#PRODUCT_BOOT_JARS += tcmiface
 
 # Telephony packages
 PRODUCT_PACKAGES += \

@@ -13,6 +13,17 @@
 # limitations under the License.
 
 CUSTOM_ROM_VERSION := 11.5.0-test1
+CUSTOM_ROM_VERSION_CODE := CAF
+PLATFORM_PROTON_VERSION := $(CUSTOM_ROM_VERSION)
 
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.build.version.custom=$(CUSTOM_ROM_VERSION)
+
+# Output target zip name
+PROTON_TARGET_ZIP := ProtonCAF_$(CUSTOM_BUILD)-R-v$(CUSTOM_ROM_VERSION)-$(shell date -u +%Y%m%d-%H%M)-UNOFFICIAL.zip
+
+# ProtonAOSP Branding
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.proton.version=$(CUSTOM_ROM_VERSION) \
+    ro.proton.version_code=$(CUSTOM_ROM_VERSION_CODE) \
+    ro.proton.device=$(CUSTOM_BUILD)

@@ -107,3 +107,6 @@ PRODUCT_PACKAGES += \
 ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gapps/common/common-vendor.mk)
 endif
+
+# Skip boot jars check
+#SKIP_BOOT_JARS_CHECK := true
