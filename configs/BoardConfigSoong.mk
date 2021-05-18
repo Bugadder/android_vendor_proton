@@ -38,6 +38,8 @@ SOONG_CONFIG_protonGlobalVars += \
 SOONG_CONFIG_NAMESPACES += protonQcomVars
 SOONG_CONFIG_protonQcomVars += \
     legacy_hw_disk_encryption \
+    supports_audio_accessory \
+    supports_debug_accessory \
     supports_extended_compress_format \
     uses_pre_uplink_features_netmgrd \
     uses_qti_camera_device \
@@ -51,6 +53,8 @@ endif
 
 # Soong bool variables
 SOONG_CONFIG_protonQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
+SOONG_CONFIG_protonQcomVars_supports_audio_accessory := $(TARGET_QTI_USB_SUPPORTS_AUDIO_ACCESSORY)
+SOONG_CONFIG_protonQcomVars_supports_debug_accessory := $(TARGET_QTI_USB_SUPPORTS_DEBUG_ACCESSORY)
 SOONG_CONFIG_protonQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_protonQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_protonQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
